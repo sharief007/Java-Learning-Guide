@@ -49,7 +49,7 @@ Java 17 Learning Guide
 ## Type Casting
 
 - Smaller types automatically casted to bigger types. 
-byte -> short -> char -> int -> long -> float -> double
+- byte -> short -> char -> int -> long -> float -> double
 - Explicit type casting is required to assign bigger types to smaller ones.
 - Beware of overflow while type casting.
 - Result of arthmetic operations on types smaller than int is an int.
