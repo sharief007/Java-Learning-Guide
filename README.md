@@ -19,5 +19,5 @@ Java 17 Learning Guide
 | long | 64 bits | -9,223,372,036,854,775,808(-2^63) | 9,223,372,036,854,775,807(2^63 -1) | 0L |  |
 | float | 32 bits | 1.4E-45 | 3.4028235E+38 | 0.0F |  |
 | double | 64 bits | 4.9E-324 | 1.7976931348623157E+308 | 0.0 |  |
-| char | 16 bits | 0 | 65,535 | '\u0000' | [Java Unicodes](https://www.javatpoint.com/unicode-system-in-java) |
+| char | 16 bits | 0 | 65,535 | '\u0000' |  |
 | boolean | 1 bit |  |  | false |  |
