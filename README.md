@@ -5,7 +5,7 @@ Java 17 Learning Guide
 # Table of Contents
 
 1. [Primitive Types](#primitive-types)
-2. [Operators]
+2. [Operators](#operators)
 
 
 
@@ -21,3 +21,22 @@ Java 17 Learning Guide
 | double | 64 bits | 4.9E-324 | 1.7976931348623157E+308 | 0.0 |  |
 | char | 16 bits | 0 | 65,535 | '\u0000' | [Java Unicodes](https://www.javatpoint.com/unicode-system-in-java) |
 | boolean | 1 bit |  |  | false |  |
+
+## Operators
+
+| Operator | Precedence |
+| --- | --- |
+| postfix increment and decrement | ++ -- |
+| prefix increment and decrement, and unary | ++ -- + - ~ ! |
+| multiplicative | * / % |
+| addictive | + - |
+| bit shift | << >> >>> |
+| relational | < > <= >= instanceof |
+| equality | == != |
+| bitwise AND | & |
+| bitwise exclusive OR | ^ |
+| bitwise inclusive OR | | |
+| logical AND | && |
+| logical OR | || |
+| ternary | ?: |
+| assignment | = += -=*= /= %= &= ^= |= <<= >>= >>>= |
