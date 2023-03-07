@@ -39,4 +39,4 @@ Java 17 Learning Guide
 | logical AND | && |
 | logical OR | \|\| |
 | ternary | ?: |
-| assignment | = += -=*= /= %= &= ^= |= <<= >>= >>>= |
+| assignment | = += -=*= /= %= &= ^= \|= <<= >>= >>>= |
