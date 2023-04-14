@@ -7,6 +7,11 @@ Java 17 Learning Guide
 1. [Primitive Types](#primitive-types)
 2. [Operators](#operators)
 3. [Type Casting](#type-casting)
+4. [Switch Keyword](#switch-keyword)
+    - [Control Flow](#control-flow)
+    - [Switch Expressions](#switch-expression)
+    - [Switch Statements](#switch-statement)
+5. 
 
 
 
@@ -84,6 +89,33 @@ b++;    // no casting is required for ++ and -- operators
 char x = 'x'
 char y = ++x;   // arithmetic operations work with char codes
 ```
+# String
+
+- String is a class (not primitive). Its instance represent sequence of characters.
+- String object can be instantiated by using *new* keyword. String objcet (It is the only java object which) allows simplified instantiation. It is the recommended way to instantiate a string in java.
+
+```java
+char[] text = {'H', 'E', 'L', 'L', 'O'};
+
+String a = new String(text);
+String b = new String("Hello");
+
+// simplified instantiation
+String c = "Hello";
+```
+- JVM optimise memory allocated to store String objects by maintaining a *single copy of each String literal* in the [String Pool memory Area](https://www.javatpoint.com/string-pool-in-java), *regardless of how many variables reference this copy*. This process is called interning.
+- intern() method is used to get a copy of String literal. 
+
+```java
+// All variables point to same reference
+
+String a = "hello";
+String b = a;
+String c = "hello";
+```
+
+![String Interning](./assets/string-pool-in-java.png)
+
 
 ## Switch Keyword
 
