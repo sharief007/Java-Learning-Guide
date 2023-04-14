@@ -93,9 +93,12 @@ b++;    // no casting is required for ++ and -- operators
 char x = 'x'
 char y = ++x;   // arithmetic operations work with char codes
 ```
+[Top 🔝](#table-of-contents)
 
 ## Wrapper classes
 
+
+[Top 🔝](#table-of-contents)
 
 ## String
 
@@ -136,6 +139,7 @@ String c = "hello";
 ### String Builder
 
 
+[Top 🔝](#table-of-contents)
 
 ## Switch Keyword
 
