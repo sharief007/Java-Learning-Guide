@@ -114,6 +114,7 @@ String b = new String("Hello");
 // simplified instantiation
 String c = "Hello";
 ```
+[Top 🔝](#table-of-contents)
 
 ### String Pool
 
@@ -130,14 +131,68 @@ String c = "hello";
 
 ![String Interning](./assets/string-pool-in-java.png)
 
+[Top 🔝](#table-of-contents)
+
 ### String operations
 
+- String objects are immutable.
+- String operations such as trim(), concat(), toLowerCase(), toUpperCase(), and so on would always return a new String object, but wouldn't modify the original String.
+
+```java
+String a = " Hello ";
+a.trim();       // it return a new String object
+a = a.trim();   // an object can be reassigned
+
+String x = a + " World"; // same as a.concat(" World");
+```
+
+- *+* operator can be used in place of concat() method.
+
+```java
+String s = "";
+s = 1 + 1 + "abc";  // 2abc
+s = "java" + 1 + 7;  // java17
+s = "xyz" + (1+1);  //xyz2
+```
+
+- *==* operator is used to check the if two references are pointing to the same value or not. In order to check the values,equals() method should be used.
+
+```java
+String str1 = "Hello";
+String str2 = "Hello";
+String str3 = new String("Hello");
+
+// because a and b both point to same value in string pool
+str1 == str2    // true
+
+str2 == "Hello"             // true
+str2 == str3                // false
+str3 == new String("Hello") // false
+
+str1.equals(str2)                   // true
+str2.equals("Hello")                // true
+str2.equals(str3)                   // true
+str3.equals(new String("Hello"))    // true    
+```
+[Top 🔝](#table-of-contents)
 
 ### String Indexing
 
+```java
+String a = "HelloWorld";
+String b = a.substring(0,5);    // 0 inclusive, 5 exclusive
+int i = a.indexOf('o');         // 4 index starts from 0
+char h = a.charAt(0);           // 'H'
+int size = a.length();          // 10 length is method, not a attribute
+int p = charAt(10);             // out of bounds exception
+```
+[Top 🔝](#table-of-contents)
 
 ### String Builder
+- String Builder objects are mutable.
+- Handling text using StringBuilder reduces the number of String objects.
 
+![String Builder](./assets/string-builder.png)
 
 [Top 🔝](#table-of-contents)
 
