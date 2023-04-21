@@ -14,7 +14,8 @@ Java Learning Guide
     - [String Indexing](#string-indexing)
     - [Text Blocks](#text-blocks)
     - [String Builder](#string-builder)
-6. [Switch Keyword](#switch-keyword)
+6. [Date and Time](#local-date-and-time)
+7. [Switch Keyword](#switch-keyword)
     - [Control Flow](#control-flow)
     - [Switch Expressions](#switch-expression)
     - [Switch Statements](#switch-statement)
@@ -228,6 +229,25 @@ int p = charAt(10);             // out of bounds exception
 ![String Builder](./assets/string-builder.png)
 
 [Top 🔝](#table-of-contents)
+
+# Local Date and Time
+
+- Date and Time can be created using [LocalDate](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/LocalDate.html), [LocalTime](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/LocalTime.html) and [LocalDateTime](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/LocalDateTime.html)
+
+```java
+LocalDate today = LocalDate.now();
+LocalTime time = LocalTime.now();
+LocalDateTime currentDateTime = LocalDateTime.now();
+
+
+LocalDate foolsDay = LocalDate.of(2019, Month.APRIL, 1);
+// LocalTime.of(hrs, mins, secs, nanosecs)
+LocalTime someTime = LocalTime.of(10, 9);  
+
+
+LocalDateTime someDateTime = foolsDay.atTime(someTime);
+
+```
 
 ## Switch Keyword
 
