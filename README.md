@@ -12,6 +12,7 @@ Java Learning Guide
     - [String Pool](#string-pool)
     - [String Operations](#string-operations)
     - [String Indexing](#string-indexing)
+    - [Text Blocks](#text-blocks)
     - [String Builder](#string-builder)
 6. [Switch Keyword](#switch-keyword)
     - [Control Flow](#control-flow)
@@ -187,6 +188,8 @@ int size = a.length();          // 10 length is method, not a attribute
 int p = charAt(10);             // out of bounds exception
 ```
 [Top 🔝](#table-of-contents)
+
+### [Text Blocks](https://docs.oracle.com/en/java/javase/15/text-blocks/index.html)
 
 ### String Builder
 - String Builder objects are mutable.
