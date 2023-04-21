@@ -102,11 +102,6 @@ char y = ++x;   // arithmetic operations work with char codes
 - Wrapper classes provides constants such as max and min values of each type.
 
 | Primitive Type | Wrapper Class |
-| - | - |
-| byte | Byte |
-| short | Short |
-
-| Primitive Type | Wrapper Class |
 | --- | --- | 
 | byte | Byte |
 | short | Short |
