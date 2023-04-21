@@ -98,6 +98,24 @@ char y = ++x;   // arithmetic operations work with char codes
 
 ## Wrapper classes
 
+- Wrapper classes apply object oriented capabilities to primitives
+- Wrapper classes provides constants such as max and min values of each type.
+
+| Primitive Type | Wrapper Class |
+| - | - |
+| byte | Byte |
+| short | Short |
+
+| Primitive Type | Wrapper Class |
+| --- | --- | 
+| byte | Byte |
+| short | Short |
+| int | Integer |
+| long | Long |
+| float | Float  |
+| double | Double |
+| char | Character |
+| boolean | Boolean |
 
 [Top 🔝](#table-of-contents)
 
