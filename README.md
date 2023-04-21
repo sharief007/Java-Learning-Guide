@@ -101,16 +101,16 @@ char y = ++x;   // arithmetic operations work with char codes
 - Wrapper classes apply object oriented capabilities to primitives
 - Wrapper classes provides constants such as max and min values of each type.
 
-| Primitive Type | Wrapper Class |
-| --- | --- | 
-| byte | Byte |
-| short | Short |
-| int | Integer |
-| long | Long |
-| float | Float  |
-| double | Double |
-| char | Character |
-| boolean | Boolean |
+| Primitive Type | Wrapper Class | Constants |
+| --- | --- | --- |
+| byte | [Byte](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Byte.html) | 
+| short | [Short](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Short.html) |
+| int | [Integer](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html) |
+| long | [Long](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Long.html) |
+| float | [Float](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Float.html)  |
+| double | [Double](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Double.html) |
+| char | [Character](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Character.html) |
+| boolean | [Boolean](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Boolean.html) |
 
 [Top 🔝](#table-of-contents)
 
