@@ -1,5 +1,5 @@
-# Java-17
-Java 17 Learning Guide
+# Java Programming Langauge
+Java Learning Guide
 
 
 # Table of Contents
