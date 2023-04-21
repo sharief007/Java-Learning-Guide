@@ -101,8 +101,8 @@ char y = ++x;   // arithmetic operations work with char codes
 - Wrapper classes apply object oriented capabilities to primitives
 - Wrapper classes provides constants such as max and min values of each type.
 
-| Primitive Type | Wrapper Class | Constants |
-| --- | --- | --- |
+| Primitive Type | Wrapper Class |
+| --- | --- | 
 | byte | [Byte](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Byte.html) | 
 | short | [Short](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Short.html) |
 | int | [Integer](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html) |
@@ -112,7 +112,24 @@ char y = ++x;   // arithmetic operations work with char codes
 | char | [Character](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Character.html) |
 | boolean | [Boolean](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Boolean.html) |
 
-[Top 🔝](#table-of-contents)
+
+```java
+Integer b = Integer.valueOf(12);    // Integer object
+int val = b.intValue();             // get primitive value using ___Value() methods
+
+Integer obj = 12;     // auto boxing
+int value = obj;      // auto unboxing
+
+// String to primitive
+float e = Float.valueOf("12.12");    
+float f = Float.parseFloat("12.12");        // string to primitive using parse___() methods
+
+// Primitive to String
+String str = String.valueOf(f);
+```
+- All wrapper classes are immutable and signed.
+- [BigDecimal](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/math/BigDecimal.html)
+[Top 🔝](#table-of-contents), [BigInteger](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/math/BigInteger.html) Classes can be used for arbitary precision. 
 
 ## String
 
