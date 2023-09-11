@@ -379,3 +379,23 @@ int numberOfDays = switch(month) {
     }
     default -> -1;
 ```
+
+### Arrays
+
+An array is a fixed-length collection of elements of the same type indexed by `int`.
+
+*Declare array object:* Determine the type of elements to be stored in the array
+```java
+int[] primes;
+Product[] products;
+
+/* ✅ This is also valid syntax
+int primes[];
+Product products[];
+*/
+```
+
+*Create array object:* Determine the length (number of elements) of the array.
+```java
+primes = new int[10];
+```
