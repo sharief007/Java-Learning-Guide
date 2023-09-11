@@ -220,7 +220,47 @@ int p = charAt(10);             // out of bounds exception
 ```
 [Top 🔝](#table-of-contents)
 
-### [Text Blocks](https://docs.oracle.com/en/java/javase/15/text-blocks/index.html)
+### Text Blocks
+
+A text block is a multiline string literal that avoids the need for most escape sequences.
+```java
+String html = """
+              <html>
+                <body></body>
+              </html>
+              """;
+```
+
+A text block begings with three double-qoute charcaters followed by a `line terminator`.
+```java
+// ⚠️ no line terminator after opening delimiter
+String a = """ """;
+// ⚠️ you can't put a text block on a single line
+String name = """Itachi Uchiha""";
+// ⚠️ line termination missing for qoutes
+String codes = """red
+                  green
+                  blue
+                  """;
+// ✅ ok
+String codes = """
+                red
+                green
+                blue
+                """;
+// no need to escape the embedded double qoutes
+String source = """
+                String msg = "Hello World";
+                System.out.println(message);
+                """;
+// ⚠️ no closing delimiter (EOF error)
+String b = """
+            ";
+```
+
+[Text Blocks tutorial](https://docs.oracle.com/en/java/javase/15/text-blocks/index.html)
+
+[Top 🔝](#table-of-contents)
 
 ### String Builder
 - String Builder objects are mutable.
